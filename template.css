@@ -40,21 +40,8 @@ body {
     border-bottom: 1px solid rgb(256, 256, 256, .1);
 }
 
-.header::after {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: #000;
-    width: 100%;
-    height: 100%;
-    opacity: 0.3;
-    z-index: -1;
-}
-
 .header__wrapper {
-    max-width: 1170px;
+    max-width: 1166px;
     margin: 0 auto;
 }
 
@@ -73,7 +60,7 @@ body {
 .header__logo {
     position: relative;
     height: 100px;
-    width: 320px;
+    width: 318px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -88,9 +75,11 @@ body {
 }
 
 .logo {
-    width: 250px;
-    height: 30px;
+    width: 274px;
+    height: 34px;
     z-index: 1;
+    margin-bottom: 10px;
+    margin-left: 6px;
 }
 
 .angle1 {
@@ -129,15 +118,36 @@ body {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    width: 680px;
+    width: 678px;
     list-style-type: none;
     z-index: 1;
 }
 
 .list li {
-    height: 24px;
+    height: 23px;
     color: white;
     cursor: pointer;
+    line-height: 1.4;
+}
+
+.list li:nth-child(1) {
+    margin-right: 16px;
+}
+
+.list li:nth-child(2) {
+    margin-right: 2px;
+}
+
+.list li:nth-child(3) {
+    padding-left: 15px;
+}
+
+.list li:nth-child(4) {
+    padding-left: 15px;
+}
+
+.list li:nth-child(5) {
+    padding-left: 18px;
 }
 
 .list li:hover {
@@ -160,8 +170,9 @@ body {
 }
 
 .main__leftBlock {
-    margin-top: 115px;
+    margin-top: 104px;
     position: relative;
+    padding-left: 2px;
 }
 
 .main__leftBlock-title {
@@ -171,7 +182,7 @@ body {
     background: linear-gradient(to right, #ffffff, #ff4d03);
     -webkit-background-clip: text;
     color: transparent;
-    clip-path: polygon(0 0, 100% 0, 100% 14%, 96% 43%, 94% 64%, 90% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 26%, 97% 45%, 94% 80%, 100% 100%, 0 100%);
 }
 
 .main__leftBlock-title span:first-child {
@@ -181,21 +192,25 @@ body {
 }
 
 .main__leftBlock-title span:last-child {
+    padding-left: 2px;
     font-family: "MuseuoSans300", sans-serif;
-    font-size: 26px;
+    font-size: 24px;
+    letter-spacing: 0.45px;
+    line-height: 0.7;
 }
 
 .main__leftBlock-button {
     position: relative;
-    margin-top: 50px;
+    margin-top: 86px;
+    margin-left: 3px;
     width: 180px;
-    height: 38px;
-    color: #fff;
-    background-color: black;
-    font-family: "MuseuoSans700", sans-serif;
-    border: 1px solid rgb(35, 59, 97);
+    height: 35px;
+    color: #a3a3a3;
+    background-color: transparent;
+    font-family: "MuseuoSans300", sans-serif;
+    border: 0.5px solid transparent;
+    border-image: linear-gradient(10deg, rgba(34, 85, 199, 0.8) 30%,  rgba(102, 153, 204, 0.0) 40%, rgba(34, 85, 199, 0.8) 100%) 1;
     font-size: 14px;
-    line-height: 1.2;
     cursor: pointer;
     z-index: 1;
 }
@@ -214,8 +229,8 @@ body {
 
 .main__leftBlock-line {
     position: absolute;
-    left: 90px;
-    top: 82px;
+    left: 92px;
+    top: 96px;
 }
 
 .cards {
@@ -223,26 +238,25 @@ body {
     display: -ms-flexbox;
     display: flex;
     flex-wrap: wrap;
-    margin-top: 75px;
-    width: 320px;
-    height: 320px;
+    margin-top: 60px;
+    width: 332px;
+    height: 332px;
     background-image: -webkit-gradient(linear, left top, right top, from(#fcfcfc), to(#a3a3a3));
     background-image: linear-gradient(to right, #fcfcfc, #a3a3a3);
     -webkit-background-clip: text;
-    font-size: 17px;
+    font-size: 16px;
     color: transparent;
 }
 
 .common {
-    padding: 20px 0;
-    width: 150px;
-    height: 150px;
     cursor: pointer;
 }
 
 .firstCard {
-    margin-bottom: 10px;
     margin-right: 10px;
+    margin-bottom: 10px;
+    width: 175px;
+    height: 163px;
     background: -webkit-gradient(linear, right bottom, left top, color-stop(10%, rgba(110, 110, 110, 0.1)), color-stop(30%, rgba(110, 110, 110, 0.05)), to(rgba(110, 110, 110, 0)));
     background: linear-gradient(to top left, rgba(110, 110, 110, 0.1) 10%, rgba(110, 110, 110, 0.05) 30%, rgba(110, 110, 110, 0) 100%);
 }
@@ -255,7 +269,8 @@ body {
 }
 
 .secondCard {
-    margin-bottom: 10px;
+    width: 145px;
+    height: 163px;
     background: -webkit-gradient(linear, left bottom, right top, color-stop(10%, rgba(110, 110, 110, 0.1)), color-stop(30%, rgba(110, 110, 110, 0.05)), to(rgba(110, 110, 110, 0)));
     background: linear-gradient(to top right, rgba(110, 110, 110, 0.1) 10%, rgba(110, 110, 110, 0.05) 30%, rgba(110, 110, 110, 0) 100%);
 }
@@ -269,6 +284,8 @@ body {
 
 .thirdCard {
     margin-right: 10px;
+    width: 175px;
+    height: 163px;
     background: -webkit-gradient(linear, right top, left bottom, color-stop(10%, rgba(110, 110, 110, 0.1)), color-stop(30%, rgba(110, 110, 110, 0.05)), to(rgba(110, 110, 110, 0)));
     background: linear-gradient(to bottom left, rgba(110, 110, 110, 0.1) 10%, rgba(110, 110, 110, 0.05) 30%, rgba(110, 110, 110, 0) 100%);
 }
@@ -281,6 +298,8 @@ body {
 }
 
 .fourthCard {
+    width: 145px;
+    height: 163px;
     background: -webkit-gradient(linear, left top, right bottom, color-stop(10%, rgba(110, 110, 110, 0.1)), color-stop(30%, rgba(110, 110, 110, 0.05)), to(rgba(110, 110, 110, 0)));
     background: linear-gradient(to bottom right, rgba(110, 110, 110, 0.1) 10%, rgba(110, 110, 110, 0.05) 30%, rgba(110, 110, 110, 0) 100%);
 }
@@ -292,17 +311,87 @@ body {
     border-left: 1px solid transparent;
 }
 
+.firstCard p:first-child {
+    margin: 16px 11px 13px 0;
+    font-family: "MuseuoSans300", sans-serif;
+}
+
+.firstCard p:nth-child(2) {
+    margin-right: 13px;
+}
+
+.firstCard p:last-child {
+    margin-right: 13px;
+    font-family: "MuseuoSans300", sans-serif;
+    font-size: 17.5px;
+    line-height: 1.3px;
+}
+
+.secondCard p:first-child {
+    margin: 15px 0 11px 38px;
+    font-family: "MuseuoSans300", sans-serif;
+    font-size: 17.5px;
+}
+
+.secondCard p:nth-child(2) {
+    margin-left: 34px;
+}
+
+.secondCard p:last-child {
+    margin-left: 32px;
+    font-family: "MuseuoSans300", sans-serif;
+    font-size: 17.5px;
+    line-height: 1.3px;
+}
+
+.thirdCard p:first-child {
+    margin-top: 32px;
+    margin-bottom: 12px;
+    margin-right: 13px;
+    font-family: "MuseuoSans300", sans-serif;
+    font-size: 17.5px;
+}
+
+.thirdCard p:nth-child(2) {
+  margin-right: 12px;
+}
+
+.thirdCard p:last-child {
+    margin-right: 14px;
+    font-family: "MuseuoSans300", sans-serif;
+    font-size: 17.5px;
+    line-height: 1.3px;
+}
+
+.fourthCard p:first-child {
+    margin: 33px 0 10px 39px;
+    font-family: "MuseuoSans300", sans-serif;
+    font-size: 17.5px;
+}
+
+.fourthCard p:nth-child(2) {
+    margin-left: 40px;
+}
+
+.fourthCard p:last-child {
+    margin-left: 39px;
+    font-family: "MuseuoSans300", sans-serif;
+    font-size: 17.5px;
+    line-height: 1.3px;
+}
+
 .common p {
     text-align: center;
 }
 
 .common p span {
+    font-family: "MuseuoSans700", sans-serif;
     font-size: 22px;
 }
 
 .common p:nth-child(2) {
+    font-family: "MuseuoSans700", sans-serif;
     font-size: 58px;
-    font-weight: 700;
 }
 
 @media (max-width: 1200px) {
@@ -369,20 +458,54 @@ body {
         color: transparent;
     }
 
+    .secondCard p:first-child {
+        margin: 15px 0 11px 0;
+    }
+
+    .secondCard p:nth-child(2) {
+        margin-left: 0;
+    }
+
+    .secondCard p:last-child {
+        margin-left: 0;
+    }
+
+    .thirdCard p:first-child {
+        margin-top: 15px;
+        margin-bottom: 2px;
+    }
+
+    .thirdCard p:last-child {
+        margin-right: 0;
+    }
+
+    .fourthCard p:first-child {
+        margin: 15px 0 20px 0;
+        font-family: "MuseuoSans300", sans-serif;
+        font-size: 17.5px;
+    }
+
+    .fourthCard p:nth-child(2) {
+        margin-left: 0;
+    }
+
+    .fourthCard p:last-child {
+        margin-left: 0;
+    }
+
     .common {
-        padding: 20px 0;
         width: 120px;
         height: 120px;
         cursor: pointer;
     }
 
     .common p span {
-        font-size: 16px;
+        font-family: "MuseuoSans700", sans-serif;
     }
 
     .common p:nth-child(2) {
+        font-family: "MuseuoSans700", sans-serif;
         font-size: 46px;
-        font-weight: 700;
     }
 }
 
